@@ -21,7 +21,6 @@ function setup(){
 	ball4 = new Ball(350,200,25);
 	ball5 = new Ball(400,200,25);
 	ball6 = new Ball(450,200,25);
-
 	slingshot1 = new SlingShot(ball1.body,{x:200, y:50});
 	slingshot2 = new SlingShot(ball2.body,{x:245, y:50});
 	slingshot3 = new SlingShot(ball3.body,{x:290, y:50});
@@ -32,7 +31,7 @@ function setup(){
 
 function draw(){
     background("");
-
+    rect(150,50,330,25);
     Engine.update(engine);
     strokeWeight(4);
 
